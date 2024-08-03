@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appy's Catering</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, Serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 5px;
+    }
+    .navbar {
+      background-color: #ffffff;
+      padding: 16px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      padding: 12px 16px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    .navbar a:hover {
+      background-color: #f0f0f0;
+    }
+    .header {
+      position: relative;
+      max-width: 1600px;
+      min-width: 500px;
+      margin: 0 auto;
+    }
+    .header img {
+      width: 100%;
+      height: auto;
+    }
+    .header .text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .section {
+      padding: 64px 16px;
+    }
+    .section img {
+      width: 100%;
+      border-radius: 8px;
+      opacity: 0.8;
+    }
+    .section h1 {
+      text-align: center;
+    }
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .contact-form input,
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #e0e0e0;
+    }
+    .footer {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 32px;
+    }
+    .footer a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Appy's Catering</a>
+  <div class="navbar-right">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<header class="header" id="home">
+  <img src="ham.jpg" alt="Hamburger Catering">
+  <div class="text">
+    <h1>A² Catering</h1>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="section" id="about">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <div style="flex: 1; padding-right: 20px;">
+        <img src="ham1.jpg" alt="Table Setting">
+      </div>
+      <div style="flex: 1;">
+        <h1>About A² Catering</h1>
+        <h5>Tradition since 2003</h5>
+        <p>Welcome to The Catering, a unique dining experience founded by Appy's. Our journey began with a simple passion: to create a culinary experience that delights the senses and brings people together. <span style="background-color: #f0f0f0; padding: 4px 8px;">seasonal</span> ingredients.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">At The Catering, we believe in more than just great food; we believe in creating an atmosphere that feels like home. We are a community, a family, and a place where you can always find a warm welcome.
+
+             We look forward to serving you!</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+ 
+  <div class="section" id="menu" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 16px;">
+        <h1>Our Fast Food Favorites</h1>
+
+        <h4>BBQ Chicken Pizza</h4>
+        <p>Grilled chicken, tangy BBQ sauce and mozzarella cheese. 11.00</p>
+        
+        <h4>Chicken Momos</h4>
+        <p>Steamed dumplings stuffed with seasoned chicken and tangy dipping sauce. 7.50</p>
+        
+        <h4>Loaded Nachos</h4>
+        <p>Crunchy tortilla chips topped with melted cheese, jalapeños, sour cream, and salsa. 7.00</p>
+        
+    </div>
+    <div style="flex: 1;">
+      <img src="ham2.jpg" alt="Menu">
+    </div>
+  </div>
+  <hr>
+  <div class="section" id="contact">
+    <h1>Contact</h1>
+    <p>We provide comprehensive catering services for events of all sizes. We tailor our offerings to meet your needs, ensuring that both the presentation and flavor of our food exceed your expectations. </p>
+    <p style="color: #007bff; font-size: 18px;"><b>A² Catering Service, 24th Main St,TN72 Tirunelveli, TamilNadu</b></p>
+    <p>You can reach us by phone at 54321 06789, via email at a²@catering.com, or by sending us a message directly through our contact form.</p>
+    <form action="/action_page.php" target="_blank" class="contact-form">
+        <p><input type="text" placeholder="Your Name" required name="name"></p>
+        <p><input type="number" placeholder="Number of Guests" required name="guests"></p>
+        <p><input type="datetime-local" required name="event_date_time" value="2020-11-16T20:00"></p>
+        <p><input type="text" placeholder="Special Requests or Message" required name="message"></p>
+        <p><button type="submit">SUBMIT</button></p>        
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <p>Copyright © 2024 Afrin Aysha H. All rights reserved. </p>
+</footer>
+</body>
+</html>
+
